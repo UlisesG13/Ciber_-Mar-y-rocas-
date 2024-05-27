@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciber Mar y rocs</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion de miembros del Ciber</h1>
+        <form id="insert-form">
+            <h2>Nombre del usuario</h2>
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="value" placeholder="Edad" required>
+            <button type="submit">Guardar</button>
+        </form>
+
+        <form id="search-form">
+            <h2>Buscar Cliente</h2>
+            <input type="number" id="search-value" placeholder="Nombre" required>
+            <button type="submit">Buscar</button>
+            <p id="search-result"></p>
+        </form>
+
+        <div id="tree-actions">
+            <h2>Opciones extras</h2>
+            <button id="find-min">Encontrar usuario mas antiguo</button>
+            <button id="find-max">Encontrar usuario mas reciente</button>
+            <button id="print-tree">Imprimir Todos los Nodos</button>
+            <pre id="tree-output"></pre>
+        </div>
+    </div>
+    <script src="./controllers/script.js"></script>
+</body>
+</html>
